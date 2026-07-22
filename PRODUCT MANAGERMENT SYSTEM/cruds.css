@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #050a30;
+    color: #e8d9c4;
+    font-family: 'Times New Roman', Times, serif;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #020726;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #e8d9c4;
+}
+input:focus{
+    background: #252d6a;      /* if we click focus the colour gets darker */
+    transform: scale(1.1);      /*here it gets bigger when you click on it*/
+}
+.price input{
+    width: 20%;
+
+}
+#total{
+    background: #7d210c;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+#total::before{
+    content: 'Total: ';
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer; /*mause shappe changes*/
+    background: #785d32;
+    color: #e8d9c4;
+    border-radius: 20px; /*smoothes the border*/
+    transition: 0.5s;  /*the space in hover happens slowly*/
+}
+button:hover{       /*just by passing the mause on, thecolour changes*/
+    background: #4c3615;
+    letter-spacing: 1px;  /*when you pass on it the letters start to have more space between letters*/
+}
+.btnSearch{
+    display: flex;                              /*flexbox puts an item in the left side andthe others one on the right side*/
+    justify-content: space-between;       /*flexbox puts an item in the maximum left side andthe others one on the maximum right side*/
+}
+.btnSearch button{
+    width: 45%;
+}
+#deleteAll{
+    margin: 20px 0;
+}
+table button:hover{
+    transform: scale(1.1);
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+}
+th, td{
+    padding: 5px;
+}
